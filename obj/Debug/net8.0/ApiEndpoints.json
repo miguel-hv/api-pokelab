@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[testJWT.WeatherForecast, testJWT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "testJWT.Controllers.WeatherForecastController\u002BResponseForecast",
         "MediaTypes": [
           "text/plain",
           "application/json",

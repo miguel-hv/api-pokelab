@@ -22,7 +22,7 @@ namespace testJWT.Auth
                 return AuthenticateResult.Fail("Unauthorized");
             }
 
-            string authorizationHeader = Request.Headers["Authorization"];
+            string authorizationHeader = Request.Headers.Authorization;
             if (string.IsNullOrEmpty(authorizationHeader)) 
             {
                 return AuthenticateResult.Fail("Unauthorized");
@@ -45,13 +45,17 @@ namespace testJWT.Auth
             var username = credentials[0];
             var password = credentials[1];
 
-            //check username and password in database and if they dont exist return unauthorized
+            //TODO: check username and password in database and if they dont exist return unauthorized
             if (username != "userDatabase" && password != "passDatabase")
             {
                return AuthenticateResult.Fail("Authentication failed");
             }
 
-            var claims = new[] { new Claim(ClaimTypes.NameIdentifier, username) };
+            var claims = new[] 
+            { 
+                new Claim(ClaimTypes.NameIdentifier, username),
+                new Claim(ClaimTypes.Role, "Admin")
+            };
             var identity = new ClaimsIdentity(claims, "Basic");
             var claimsPrincipal = new ClaimsPrincipal(identity);
             return AuthenticateResult.Success(new AuthenticationTicket(claimsPrincipal, Scheme.Name));

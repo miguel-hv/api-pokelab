@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Identity.Client;
+using System.Security.Claims;
 
 namespace testJWT.Controllers
 {
@@ -19,17 +21,36 @@ namespace testJWT.Controllers
             _logger = logger;
         }
 
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        //public IEnumerable<WeatherForecast> Get()
+        public ResponseForecast Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            WeatherForecast[] forecast = Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+
+            string username = HttpContext.User.Claims
+                .FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value!;
+
+            //return forecast;
+
+            ResponseForecast response = new()
+            {
+                Forecast = forecast, 
+                Username = username
+            };
+
+            return response;
+        }
+        public class ResponseForecast
+        {
+            public WeatherForecast[]? Forecast { get; set; }
+            public string? Username { get; set; }
         }
     }
 }
