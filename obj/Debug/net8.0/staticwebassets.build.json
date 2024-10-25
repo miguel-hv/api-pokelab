@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YHD/IODWFzDRHs8YSBf75kVS2qjJkCXHptqLlHQEiIw=",
+  "Source": "testJWT",
+  "BasePath": "_content/testJWT",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
