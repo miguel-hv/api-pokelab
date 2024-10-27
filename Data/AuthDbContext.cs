@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using testJWT.Users;
 
 namespace testJWT.Data
 {
-    public class AuthDbContext: IdentityDbContext<IdentityUser>
+    public class AuthDbContext: DbContext
     {
-       public AuthDbContext(DbContextOptions options): base (options)
+       public AuthDbContext(DbContextOptions<AuthDbContext> options): base (options)
        { 
        }
+        public DbSet<User> Users { get; set; } = null!;
     }
 }

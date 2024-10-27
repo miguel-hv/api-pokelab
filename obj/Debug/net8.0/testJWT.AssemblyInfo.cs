@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("de33f288-8b0f-482c-a2dc-31539a930bc1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("testJWT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ecc1430aa66f499f0bd4b938c1cfd9238143ba87")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d32bedd9e5ae82e299619ae096d145582e736f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("testJWT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("testJWT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,10 +1,10 @@
 ﻿# test jwt
 
-Para la segunda iteración la idea es sustituir identity y hacer el registro con nombre y contraseña añadiendo el modelo de User de pokelab.
+- meter password hasher, login y register de User;
 
-La tercera iteración implica meter el token jwt
+- meter el modelo de User de pokelab: ¿roles a partir de pokemon seleccionado?
 
-La cuarta iteración será usar una bd real y el resto de modelos y conectar con pokelab
+- usar una bd real y el resto de modelos y conectar con pokelab. Cambiar de code first a bd first (email es primary key)
 
 La quinta iteración será hacer el modelo en bd y scaffolding para el código (db first en vez de code first) y conectar con pokelab
 
