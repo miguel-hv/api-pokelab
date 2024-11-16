@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("api-pokelab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+405aa15a1aedfc6808b1bfa20d7586502b5b9544")]
 [assembly: System.Reflection.AssemblyProductAttribute("api-pokelab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("api-pokelab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

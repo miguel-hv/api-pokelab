@@ -32,7 +32,7 @@ namespace api_pokelab.Controllers
         }
 
         [Authorize]
-        [HttpGet(Name = "getAuthorizedEndpoint")]
+        [HttpGet("secured", Name = "getAuthorizedEndpoint")]
         public string GetSecured() => "secured edpoint response";
     }
 }
