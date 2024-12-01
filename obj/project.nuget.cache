@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "25WlM2oFpM0=",
+  "dgSpecHash": "3m7ZFxFEZhU=",
   "success": true,
   "projectFilePath": "C:\\Users\\huert\\Documents\\Code\\.NET\\api-pokelab\\api-pokelab\\api-pokelab.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\huert\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\huert\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\huert\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\huert\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\huert\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\huert\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

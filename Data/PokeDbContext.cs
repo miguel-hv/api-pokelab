@@ -13,6 +13,16 @@ namespace api_pokelab.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            var passwordHash = BCrypt.Net.BCrypt.HashPassword("pass123");
+            modelBuilder.Entity<User>().HasData(
+                new User
+                {
+                    Email = "testuser@example.com",
+                    Username = "testuser",
+                    PasswordHash = passwordHash
+                }
+            );
         }
     }
 }

@@ -259,3 +259,5 @@ C:\Users\huert\Documents\Code\.NET\api-pokelab\api-pokelab\obj\Debug\net8.0\refi
 C:\Users\huert\Documents\Code\.NET\api-pokelab\api-pokelab\obj\Debug\net8.0\api-pokelab.pdb
 C:\Users\huert\Documents\Code\.NET\api-pokelab\api-pokelab\obj\Debug\net8.0\api-pokelab.genruntimeconfig.cache
 C:\Users\huert\Documents\Code\.NET\api-pokelab\api-pokelab\obj\Debug\net8.0\ref\api-pokelab.dll
+C:\Users\huert\Documents\Code\.NET\api-pokelab\api-pokelab\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\huert\Documents\Code\.NET\api-pokelab\api-pokelab\obj\Debug\net8.0\api-pokelab.sourcelink.json

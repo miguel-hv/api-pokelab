@@ -1,5 +1,4 @@
 using api_pokelab.Data;
-using api_pokelab.Extensions;
 using api_pokelab.Models;
 using api_pokelab.Repositories;
 using api_pokelab.Services;
@@ -95,6 +94,13 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+}
+
+// Ensure database is created and seed data is added
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<PokeDbContext>();
+    context.Database.EnsureCreated(); // Applies schema and seeds the data
 }
 
 app.UseHttpsRedirection();
